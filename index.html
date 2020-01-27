@@ -5,8 +5,8 @@
     <title>HTML Academy: Нёрдс Главная страница</title>
 </head>
 <body>
-  <header>
-	<img src="img/logo.svg" alt="Логотип">
+  <header class="header">
+	<a class="main-header-logo"><img src="img/logo.svg" alt="Логотип"></a>
      <nav class="main-nav">   
         <ul class="main-nav-list">
           <li><a href="about.html">Студия</a></li>
@@ -26,24 +26,25 @@
   </header>
   <main>
     <section class="slider">
-    	<div class="img/slide1.jpg">
+    	<div class="slide1">
         <h2>Долго, дорого, скрупулезно.</h2>
     	<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-    	<button class="button-slide" type="button">Узнать большу</button>
+    	<button class="button-slide" type="button">Узнать больше</button>
         </div>
-        <div class="img/slide1.jpg">
+        <div class="slide2">
         <h2>Любим математику как никто другой</h2>
     	<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-    	<button class="button-slide" type="button">Узнать большу</button>
+    	<button class="button-slide" type="button">Узнать больше</button>
         </div>
-        <div class="img/slide1.jpg">
+        <div class="slide3">
         <h2>Только ночь, только хардкор</h2>
     	<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-    	<button class="button-slide" type="button">Узнать большу</button>
+    	<button class="button-slide" type="button">Узнать больше</button>
         </div>
     </section>
 	<section class="work">
-    	<ul>
+    	<h2 class="visually-hidden">Услуги</h2>
+        <ul>
         	<li class="work1">
             	<img src="img/work1.jpg" alt="Веб-сайты">
                 <p class="work-heading">Веб-сайты</p>
@@ -65,7 +66,8 @@
         </ul>
     </section>
     <section class="about">
-    	<p><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+    	<h2 class="visually-hidden">О компании</h2>
+        <p><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
         <p class="orders">Выполняем заказы на разработку:</p>
         <ul>
@@ -75,6 +77,7 @@
         </ul>
     </section>
     <section class="achievements">
+        <h2 class="visually-hidden">Достижения</h2>
     	<figure><img src="img/achievements.jpg" alt="Nerds"></figure>
         <p><strong>с 2004 года Любим точность во всем:</strong></p>
         <table width="100%" class="achievements-number">
@@ -91,20 +94,22 @@
         </table>
     </section>
     <section class="partnes">
-    	<figure><a href="#nowhere"><img src="img/partner1.jpg" alt="HTML Academy"></a></figure>
+    	<h2 class="visually-hidden">Партнёры</h2>
+        <figure><a href="#nowhere"><img src="img/partner1.jpg" alt="HTML Academy"></a></figure>
     	<figure><a href="#nowhere"><img src="img/partner2.jpg" alt="Borodinski"></a></figure>
     	<figure><a href="#nowhere"><img src="img/partner3.jpg" alt="Pink"></a></figure>
     	<figure><a href="#nowhere"><img src="img/partner4.jpg" alt="Mishka"></a></figure>
     </section>
     <section class="map">
-    	<div class="map-about">
+    	<h2 class="visually-hidden">Карта</h2>
+        <div class="map-about">
     	<h2>NЁRDS DESIGN STUDIO</h2>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
     	</div>
     </section>
   </main>
-  <footer>
+  <footer class="main-footer">
 	<ul class="social">
     	<li><a href="#" class="vk"></a></li>
         <li><a href="#" class="facebook"></a></li>
