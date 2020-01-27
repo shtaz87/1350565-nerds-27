@@ -5,11 +5,10 @@
     <title>HTML Academy: Нёрдс Главная страница</title>
 </head>
 <body>
-  
   <header>
-	<a href="#"><img src="img/logo.svg" alt="Логотип"></a>
-     <nav>   
-        <ul class="menu">
+	<img src="img/logo.svg" alt="Логотип">
+     <nav class="main-nav">   
+        <ul class="main-nav-list">
           <li><a href="about.html">Студия</a></li>
           <li><a href="clients.html">Клиенты</a></li>
           <li><a href="shop.html">Магазин</a></li>
@@ -23,42 +22,42 @@
              </a>
            </li>
         </ul>
-		</nav>
+     </nav>
   </header>
   <main>
     <section class="slider">
     	<div class="img/slide1.jpg">
         <h2>Долго, дорого, скрупулезно.</h2>
     	<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-    	<a href="more.html"><button class="button-slide" type="button">Узнать большу</button></a>
+    	<button class="button-slide" type="button">Узнать большу</button>
         </div>
         <div class="img/slide1.jpg">
         <h2>Любим математику как никто другой</h2>
     	<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-    	<a href="more.html"><button class="button-slide" type="button">Узнать большу</button></a>
+    	<button class="button-slide" type="button">Узнать большу</button>
         </div>
         <div class="img/slide1.jpg">
         <h2>Только ночь, только хардкор</h2>
     	<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-    	<a href="more.html"><button class="button-slide" type="button">Узнать большу</button></a>
+    	<button class="button-slide" type="button">Узнать большу</button>
         </div>
     </section>
 	<section class="work">
     	<ul>
         	<li class="work1">
-            	<figure><img src="img/work1.jpg" alt="Веб-сайты"></figure>
+            	<img src="img/work1.jpg" alt="Веб-сайты">
                 <p class="work-heading">Веб-сайты</p>
                 <p class="work-info">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
                 <a href="order.html">ЗАКАЗАТЬ</a>
             </li>
             <li class="work2">
-            	<figure><img src="img/work2.jpg" alt="Приложения"></figure>
+            	<img src="img/work2.jpg" alt="Приложения">
                 <p class="work-heading">Приложения</p>
                 <p class="work-info">Покорите топ-10 приложений в AppStore и Google Play</p>
                 <a href="order.html">ЗАКАЗАТЬ</a>
             </li>
             <li class="work2">
-            	<figure><img src="img/work2.jpg" alt="Презентации"></figure>
+            	<img src="img/work2.jpg" alt="Презентации">
                 <p class="work-heading">Презентации</p>
                 <p class="work-info">Вы даже не подозреваете, насколько вы изумительны!</p>
                 <a href="order.html">ЗАКАЗАТЬ</a>
@@ -66,9 +65,9 @@
         </ul>
     </section>
     <section class="about">
-    	<h1>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h1>
+    	<p><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <h2>Выполняем заказы на разработку:</h2>
+        <p class="orders">Выполняем заказы на разработку:</p>
         <ul>
         	<li>Веб-сайтов любой сложности</li>
             <li>Мобильных приложений для iOS и Android</li>
@@ -78,17 +77,24 @@
     <section class="achievements">
     	<figure><img src="img/achievements.jpg" alt="Nerds"></figure>
         <p><strong>с 2004 года Любим точность во всем:</strong></p>
-        <ul>
-        	<li><strong>146%</strong><br />Уровень самоотдачи</li>
-            <li><strong>100%</strong><br />Соблюдение сроков</li>
-            <li><strong>50%</strong><br />Минимальная предоплата</li>
-        </ul>
+        <table width="100%" class="achievements-number">
+          <tr>
+            <td><strong>146%</strong></td>
+            <td><strong>100%</strong></td>
+            <td><strong>50%</strong></td>
+          </tr>
+          <tr>
+            <td>Уровень самоотдачи</td>
+            <td>Соблюдение сроков</td>
+            <td>Минимальная предоплата</td>
+          </tr>
+        </table>
     </section>
     <section class="partnes">
-    	<figure><img src="img/partner1.jpg" alt="HTML Academy"></figure>
-    	<figure><img src="img/partner2.jpg" alt="Borodinski"></figure>
-    	<figure><img src="img/partner3.jpg" alt="Pink"></figure>
-    	<figure><img src="img/partner4.jpg" alt="Mishka"></figure>
+    	<figure><a href="#nowhere"><img src="img/partner1.jpg" alt="HTML Academy"></a></figure>
+    	<figure><a href="#nowhere"><img src="img/partner2.jpg" alt="Borodinski"></a></figure>
+    	<figure><a href="#nowhere"><img src="img/partner3.jpg" alt="Pink"></a></figure>
+    	<figure><a href="#nowhere"><img src="img/partner4.jpg" alt="Mishka"></a></figure>
     </section>
     <section class="map">
     	<div class="map-about">
@@ -100,9 +106,9 @@
   </main>
   <footer>
 	<ul class="social">
-    	<li><a href="#"><img src="img/social1.jpg" alt="Вконтакте"></a></li>
-        <li><a href="#"><img src="img/social2.jpg" alt="Facebook"></a></li>
-        <li><a href="#"><img src="img/social3.jpg" alt="Instagram"></a></li>
+    	<li><a href="#" class="vk"></a></li>
+        <li><a href="#" class="facebook"></a></li>
+        <li><a href="#" class="instagram"></a></li>
     </ul>
     <h3>Давайте дружить, это выгодно!</h3>
     <p>Скидка 10% для друзей из социальных сетей.</p>
