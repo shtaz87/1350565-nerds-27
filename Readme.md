@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Александр](https://up.htmlacademy.ru/htmlcss/27/user/1350565).
-* Наставник: `Неизвестно`.
+* Наставник: Геннадий Максимов (https://htmlacademy.ru/profile/gennadiy).
 
 ---
 
