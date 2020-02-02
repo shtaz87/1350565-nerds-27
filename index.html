@@ -5,70 +5,81 @@
     <title>HTML Academy: Нёрдс Главная страница</title>
 </head>
 <body>
-  
-  <header>
-	<a href="#"><img src="img/logo.svg" alt="Логотип"></a>
-     <nav>   
-        <ul class="menu">
+
+  <header class="header">
+	<a class="main-header-logo"><img src="img/logo.svg" width="160px" height="65px" alt="Логотип"></a>
+     <nav class="main-nav">   
+        <ul class="main-nav-list">
           <li><a href="about.html">Студия</a></li>
           <li><a href="clients.html">Клиенты</a></li>
-          <li><a href="shop.html">Магазин</a></li>
+          <li><a href="inner.html">Магазин</a></li>
+
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="cart">
           <li>
              <a href="cart.html">
-             <img src="img/cart.jpg" alt="Корзина">
-             <button type="button" type="button">Корзина</button>
+
+             <img src="img/cart-icon.svg" width="15px" height="15px" alt="Корзина">
+             <button type="button">Корзина</button>
              </a>
            </li>
         </ul>
-		</nav>
+     </nav>
   </header>
   <main>
     <section class="slider">
-    	<div class="img/slide1.jpg">
-        <h2>Долго, дорого, скрупулезно.</h2>
-    	<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-    	<a href="more.html"><button class="button-slide" type="button">Узнать большу</button></a>
+    	<div class="slide1">
+          <h2>Долго, дорого, скрупулезно.</h2>
+    	  <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+    	  <button class="button-slide" type="button">Узнать больше</button>
         </div>
-        <div class="img/slide1.jpg">
-        <h2>Любим математику как никто другой</h2>
-    	<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-    	<a href="more.html"><button class="button-slide" type="button">Узнать большу</button></a>
+        <div class="slide2">
+          <h2>Любим математику как никто другой</h2>
+    	  <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+    	  <button class="button-slide" type="button">Узнать больше</button>
         </div>
-        <div class="img/slide1.jpg">
-        <h2>Только ночь, только хардкор</h2>
-    	<p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-    	<a href="more.html"><button class="button-slide" type="button">Узнать большу</button></a>
+        <div class="slide3">
+          <h2>Только ночь, только хардкор</h2>
+    	  <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+    	  <button class="button-slide" type="button">Узнать больше</button>
         </div>
     </section>
-	<section class="work">
-    	<ul>
-        	<li class="work1">
-            	<figure><img src="img/work1.jpg" alt="Веб-сайты"></figure>
+	<section class="advantages">
+    	<h2 class="visually-hidden">Услуги</h2>
+        <ul class="advantages-list">
+        	<li class="advantages-item">
+            	<img src="img/work1.jpg" width="300px" height="146px" alt="Веб-сайты">
+
                 <p class="work-heading">Веб-сайты</p>
                 <p class="work-info">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
                 <a href="order.html">ЗАКАЗАТЬ</a>
             </li>
-            <li class="work2">
-            	<figure><img src="img/work2.jpg" alt="Приложения"></figure>
+
+            <li class="advantages-item">
+            	<img src="img/work2.jpg" width="300px" height="146px" alt="Приложения">
+
                 <p class="work-heading">Приложения</p>
                 <p class="work-info">Покорите топ-10 приложений в AppStore и Google Play</p>
                 <a href="order.html">ЗАКАЗАТЬ</a>
             </li>
-            <li class="work2">
-            	<figure><img src="img/work2.jpg" alt="Презентации"></figure>
+
+            <li class="advantages-item">
+            	<img src="img/work3.jpg" width="300px" height="146px" alt="Презентации">
+
                 <p class="work-heading">Презентации</p>
                 <p class="work-info">Вы даже не подозреваете, насколько вы изумительны!</p>
                 <a href="order.html">ЗАКАЗАТЬ</a>
             </li>
         </ul>
     </section>
-    <section class="about">
-    	<h1>Мы — маленькая, но гордая дизайн-студия из Краснодара. </h1>
+
+    <section class="about-us">
+    	<h2 class="visually-hidden">О компании</h2>
+        <p><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <h2>Выполняем заказы на разработку:</h2>
+        <p class="orders">Выполняем заказы на разработку:</p>
+
         <ul>
         	<li>Веб-сайтов любой сложности</li>
             <li>Мобильных приложений для iOS и Android</li>
@@ -76,36 +87,47 @@
         </ul>
     </section>
     <section class="achievements">
-    	<figure><img src="img/achievements.jpg" alt="Nerds"></figure>
+        <h2 class="visually-hidden">Достижения</h2>
+    	<figure><img src="img/achievements.jpg" width="360px" height="208px" alt="Nerds"></figure>
         <p><strong>с 2004 года Любим точность во всем:</strong></p>
-        <ul>
-        	<li><strong>146%</strong><br />Уровень самоотдачи</li>
-            <li><strong>100%</strong><br />Соблюдение сроков</li>
-            <li><strong>50%</strong><br />Минимальная предоплата</li>
-        </ul>
+        <table width="100%" class="achievemtns-table">
+          <tr>
+            <td><strong>146%</strong></td>
+            <td><strong>100%</strong></td>
+            <td><strong>50%</strong></td>
+          </tr>
+          <tr>
+            <td>Уровень самоотдачи</td>
+            <td>Соблюдение сроков</td>
+            <td>Минимальная предоплата</td>
+          </tr>
+        </table>
     </section>
     <section class="partnes">
-    	<figure><img src="img/partner1.jpg" alt="HTML Academy"></figure>
-    	<figure><img src="img/partner2.jpg" alt="Borodinski"></figure>
-    	<figure><img src="img/partner3.jpg" alt="Pink"></figure>
-    	<figure><img src="img/partner4.jpg" alt="Mishka"></figure>
+    	<h2 class="visually-hidden">Партнёры</h2>
+        <a href="#nowhere"><img src="img/partner1.jpg" width="199px" height="68px" alt="HTML Academy"></a>
+    	<a href="#nowhere"><img src="img/partner2.jpg" width="209px" height="87px" alt="Borodinski"></a>
+    	<a href="#nowhere"><img src="img/partner3.jpg" width="185px" height="52px" alt="Pink"></a>
+    	<a href="#nowhere"><img src="img/partner4.jpg" width="173px" height="84px" alt="Mishka"></a>
     </section>
     <section class="map">
-    	<div class="map-about">
+        <div class="map-about">
     	<h2>NЁRDS DESIGN STUDIO</h2>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
     	</div>
     </section>
   </main>
-  <footer>
+
+  <footer class="main-footer">
 	<ul class="social">
-    	<li><a href="#"><img src="img/social1.jpg" alt="Вконтакте"></a></li>
-        <li><a href="#"><img src="img/social2.jpg" alt="Facebook"></a></li>
-        <li><a href="#"><img src="img/social3.jpg" alt="Instagram"></a></li>
+    	<li><a href="#" class="vk"></a></li>
+        <li><a href="#" class="facebook"></a></li>
+        <li><a href="#" class="instagram"></a></li>
     </ul>
-    <h3>Давайте дружить, это выгодно!</h3>
+    <p><b>Давайте дружить, это выгодно!</b></p>
     <p>Скидка 10% для друзей из социальных сетей.</p>
   </footer>
 </body>
 </html>
+ 
