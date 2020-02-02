@@ -6,7 +6,7 @@
 </head>
 <body>
   <header class="header">
-	<a class="main-header-logo"><img src="img/logo.svg" width="160px" height="65px" alt="Логотип"></a>
+	<a class="main-header-logo"><img src="img/logo.svg" width="160" height="65" alt="Логотип"></a>
      <nav class="main-nav">   
         <ul class="main-nav-list">
           <li><a href="about.html">Студия</a></li>
@@ -17,8 +17,8 @@
         <ul class="cart">
           <li>
              <a href="cart.html">
-             <img src="img/cart-icon.svg" width="15px" height="15px" alt="Корзина">
-             <button type="button">Корзина</button>
+             <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
+			 Корзина
              </a>
            </li>
         </ul>
@@ -46,19 +46,19 @@
     	<h2 class="visually-hidden">Услуги</h2>
         <ul class="advantages-list">
         	<li class="advantages-item">
-            	<img src="img/work1.jpg" width="300px" height="146px" alt="Веб-сайты">
+            	<img src="img/work1.jpg" width="300" height="146" alt="Веб-сайты">
                 <p class="work-heading">Веб-сайты</p>
                 <p class="work-info">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
                 <a href="order.html">ЗАКАЗАТЬ</a>
             </li>
             <li class="advantages-item">
-            	<img src="img/work2.jpg" width="300px" height="146px" alt="Приложения">
+            	<img src="img/work2.jpg" width="300" height="146" alt="Приложения">
                 <p class="work-heading">Приложения</p>
                 <p class="work-info">Покорите топ-10 приложений в AppStore и Google Play</p>
                 <a href="order.html">ЗАКАЗАТЬ</a>
             </li>
             <li class="advantages-item">
-            	<img src="img/work3.jpg" width="300px" height="146px" alt="Презентации">
+            	<img src="img/work3.jpg" width="300" height="146" alt="Презентации">
                 <p class="work-heading">Презентации</p>
                 <p class="work-info">Вы даже не подозреваете, насколько вы изумительны!</p>
                 <a href="order.html">ЗАКАЗАТЬ</a>
@@ -78,34 +78,48 @@
     </section>
     <section class="achievements">
         <h2 class="visually-hidden">Достижения</h2>
-    	<figure><img src="img/achievements.jpg" width="360px" height="208px" alt="Nerds"></figure>
+    	<figure><img src="img/achievements.jpg" width="360" height="208" alt="Nerds"></figure>
         <p><strong>с 2004 года Любим точность во всем:</strong></p>
-        <table width="100%" class="achievemtns-table">
+        <table class="achievemtns-table">
           <tr>
             <td><strong>146%</strong></td>
             <td><strong>100%</strong></td>
             <td><strong>50%</strong></td>
           </tr>
           <tr>
-            <td>Уровень самоотдачи</td>
-            <td>Соблюдение сроков</td>
-            <td>Минимальная предоплата</td>
+            <th>Уровень самоотдачи</th>
+            <th>Соблюдение сроков</th>
+            <th>Минимальная предоплата</th>
           </tr>
         </table>
     </section>
     <section class="partnes">
     	<h2 class="visually-hidden">Партнёры</h2>
-        <a href="#nowhere"><img src="img/partner1.png" width="199px" height="68px" alt="HTML Academy"></a>
-    	<a href="#nowhere"><img src="img/partner2.png" width="209px" height="87px" alt="Borodinski"></a>
-    	<a href="#nowhere"><img src="img/partner3.png" width="185px" height="52px" alt="Pink"></a>
-    	<a href="#nowhere"><img src="img/partner4.png" width="173px" height="84px" alt="Mishka"></a>
+        <a href="#nowhere"><img src="img/partner1.png" width="199" height="68" alt="HTML Academy"></a>
+    	<a href="#nowhere"><img src="img/partner2.png" width="209" height="87" alt="Borodinski"></a>
+    	<a href="#nowhere"><img src="img/partner3.png" width="185" height="52" alt="Pink"></a>
+    	<a href="#nowhere"><img src="img/partner4.png" width="173" height="84" alt="Mishka"></a>
     </section>
-    <section class="map">
-        <div class="map-about">
+     <section class="map-and-contacts">
+      <div class="map-and-contacts__contacts">
     	<h2>NЁRDS DESIGN STUDIO</h2>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
-    	</div>
+      </div>
+	  <div class="pop-up">
+        <form class="pop-up__form" method="post" action="#">
+          <fieldset>
+            <legend>Напишите нам</legend>
+            <label for="name">Ваше имя:</label>
+            <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+       	    <label for="mail">Ваш e-mail:</label>
+            <input id="mail" type="text" name="mail" placeholder="email@example.com">
+            <label for="message">Текст письма:</label>
+            <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+            <button type="submit">Отправить</button>
+      	  </fieldset>
+    	</form>
+  	  </div>
     </section>
   </main>
   <footer class="main-footer">
@@ -114,23 +128,9 @@
         <li><a href="#nowhere" class="facebook"></a></li>
         <li><a href="#nowhere" class="instagram"></a></li>
     </ul>
-    <p><b>Давайте дружить, это выгодно!</b></p>
+    <b>Давайте дружить, это выгодно!</b>
     <p>Скидка 10% для друзей из социальных сетей.</p>
-  </footer>
-  <div class="pop-up">
-    <form class="pop-up__form" method="post" action="#">
-      <fieldset>
-        <legend>Напишите нам</legend>
-        <label for="name">Ваше имя:</label>
-        <input id="name" type="text" name="name" placeholder="Имя Фамилия">
-        <label for="mail">Ваш e-mail:</label>
-        <input id="mail" type="text" name="mail" placeholder="email@example.com">
-        <label for="message">Текст письма:</label>
-        <textarea name="message" id="comment-field" placeholder="В свободной форме"></textarea>
-        <button type="submit">Отправить</button>
-      </fieldset>
-    </form>
-  </div>
+	</footer>
 </body>
 </html>
  
