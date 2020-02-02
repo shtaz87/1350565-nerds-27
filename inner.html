@@ -6,19 +6,19 @@
 </head>
 <body>
   <header class="header">
-	<a href="index.html" class="header-logo"><img src="img/logo.svg" width="160px" height="65px" alt="Логотип"></a>
+	<a href="index.html" class="header-logo"><img src="img/logo.svg" width="160" height="65" alt="Логотип"></a>
      <nav class="main-nav">   
         <ul class="main-nav-list">
           <li><a href="about.html">Студия</a></li>
           <li><a href="clients.html">Клиенты</a></li>
-          <li><a href="shop.html" class="active">Магазин</a></li>
+          <li><a class="active">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="cart">
           <li>
              <a href="cart.html">
-             <img src="img/cart-icon.svg" width="15px" height="15px" alt="Корзина">
-             <button type="button">Корзина</button>
+             <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
+			 Корзина
              </a>
            </li>
         </ul>
@@ -59,7 +59,7 @@
             <label for="params-features__block">Блок преимуществ</label>
           </li>
           <li>
-            <input type="checkbox" name="news" value="news" id="params-features__news">
+            <input type="checkbox" name="news" value="news" id="params-features__news" checked>
             <label for="params-features__news">Новости</label>
           </li>
           <li>
@@ -87,7 +87,7 @@
       </div>
       <ul class="article">
         <li class="article-item">
-        	<img src="img/item1.jpg" width="360px" height="576px" alt="Sedona">
+        	<img src="img/item1.jpg" width="360" height="576" alt="Sedona">
             <div class="article-item-hover">
               <h2>Sedona</h2>
               <p>Информационный сайт для туристов</p>
@@ -95,7 +95,7 @@
             </div>
         </li>
         <li class="article-item">
-        	<img src="img/item2.jpg" width="360px" height="576px" alt="Pink App">
+        	<img src="img/item2.jpg" width="360" height="576" alt="Pink App">
             <div class="article-item-hover">
               <h2>Pink App</h2>
               <p>Продуктовый лендинг приложения для iOS и Android</p>
@@ -103,7 +103,7 @@
             </div>
         </li>
         <li class="article-item">
-        	<img src="img/item3.jpg" width="360px" height="576px" alt="Barbershop">
+        	<img src="img/item3.jpg" width="360" height="576" alt="Barbershop">
             <div class="article-item-hover">
               <h2>Barbershop</h2>
               <p>Сайт салона красоты. Для мужчин, да.</p>
@@ -111,7 +111,7 @@
             </div>
         </li>
         <li class="article-item">
-        	<img src="img/item4.jpg" width="360px" height="576px" alt="MISHKA">
+        	<img src="img/item4.jpg" width="360" height="576" alt="MISHKA">
             <div class="article-item-hover">
               <h2>MISHKA</h2>
               <p>Интернет-магазин вязаных игрушек</p>
@@ -119,7 +119,7 @@
             </div>
         </li>
         <li class="article-item">
-        	<img src="img/item5.jpg" width="360px" height="576px" alt="A Plus">
+        	<img src="img/item5.jpg" width="360" height="576" alt="A Plus">
             <div class="article-item-hover">
               <h2>A Plus</h2>
               <p>Лендинг курсов повышения квалификации</p>
@@ -127,7 +127,7 @@
             </div>
         </li>
         <li class="article-item">
-        	<img src="img/item6.jpg" width="360px" height="576px" alt="КВАСТ">
+        	<img src="img/item6.jpg" width="360" height="576" alt="КВАСТ">
             <div class="article-item-hover">
               <h2>КВАСТ</h2>
               <p>Промо-сайт производителя крафтового кваса</p>
@@ -143,11 +143,25 @@
         </ul>
     </section>
     <section class="map-and-contacts">
-        <div class="map-and-contacts__contacts">
+      <div class="map-and-contacts__contacts">
     	<h2>NЁRDS DESIGN STUDIO</h2>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
-    	</div>
+      </div>
+	  <div class="pop-up">
+        <form class="pop-up__form" method="post" action="#">
+          <fieldset>
+            <legend>Напишите нам</legend>
+            <label for="name">Ваше имя:</label>
+            <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+       	    <label for="mail">Ваш e-mail:</label>
+            <input id="mail" type="text" name="mail" placeholder="email@example.com">
+            <label for="message">Текст письма:</label>
+            <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+            <button type="submit">Отправить</button>
+      	  </fieldset>
+    	</form>
+  	  </div>
     </section>
   </main>
   <footer class="main-footer">
@@ -156,23 +170,9 @@
         <li><a href="#nowhere" class="facebook"></a></li>
         <li><a href="#nowhere" class="instagram"></a></li>
     </ul>
-    <p><b>Давайте дружить, это выгодно!</b></p>
+    <b>Давайте дружить, это выгодно!</b>
     <p>Скидка 10% для друзей из социальных сетей.</p>
   </footer>
-  <div class="pop-up">
-    <form class="pop-up__form" method="post" action="#">
-      <fieldset>
-        <legend>Напишите нам</legend>
-        <label for="name">Ваше имя:</label>
-        <input id="name" type="text" name="name" placeholder="Имя Фамилия">
-        <label for="mail">Ваш e-mail:</label>
-        <input id="mail" type="text" name="mail" placeholder="email@example.com">
-        <label for="message">Текст письма:</label>
-        <textarea name="message" id="comment-field" placeholder="В свободной форме"></textarea>
-        <button type="submit">Отправить</button>
-      </fieldset>
-    </form>
-  </div>
 </body>
 </html>
  
