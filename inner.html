@@ -27,9 +27,15 @@
   <main>
 	<h1>Магазин готовых шаблонов</h1>
     <section class="filter">
-    <h2>Стоимость</h2>
-    
     <form class="params-form" method="post" action="#">
+      <fieldset>
+        <legend>Стоимость:</legend>
+        <input type="range" min="0" max="15000" step="10">
+        <label for="min-price">от</label>
+        <input id="min-price" type="text" name="min-price" placeholder="0">
+        <label for="max-price">до</label>
+        <input id="max-price" type="text" name="max-price" placeholder="15000">
+      </fieldset>
       <fieldset>
         <legend>Сетка:</legend>
         <ul>
