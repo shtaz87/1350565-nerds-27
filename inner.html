@@ -14,70 +14,69 @@
           <li><a class="active">Магазин</a></li>
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
-        <ul class="cart">
+     </nav>
+     <ul class="user-basket">
           <li>
-             <a href="cart.html">
-             <img src="img/cart-icon.svg" width="15" height="15" alt="Корзина">
-			 Корзина
+             <a class="basket" href="cart.html">
+			         Корзина
              </a>
            </li>
-        </ul>
-     </nav>
+     </ul>
   </header>
   <main>
 	<h1>Магазин готовых шаблонов</h1>
     <section class="filter">
-      <h2 class="visually-hidden">Фильтр</h2>
+    <h2 class="visually-hidden">Фильтр</h2>
     <form class="params-form" method="post" action="#">
       <fieldset>
         <legend>Стоимость:</legend>
-        <input type="range" min="0" max="15000" step="10">
-        <label for="min-price">от</label>
-        <input id="min-price" type="text" name="min-price" placeholder="0">
-        <label for="max-price">до</label>
-        <input id="max-price" type="text" name="max-price" placeholder="15000">
+          <div class="form-field">
+            <input type="range" min="0" max="15000" step="10">
+          </div>
+          <div class="form-field">  
+            <label for="min-price">от</label>
+            <input id="min-price" type="text" name="min-price" placeholder="0">
+            <label for="max-price">до</label>
+            <input id="max-price" type="text" name="max-price" placeholder="15000">
+          </div>
       </fieldset>
       <fieldset>
         <legend>Сетка:</legend>
-        <ul>
-          <li>
+          <div class="form-area">
             <input type="radio" name="params-group" value="adaptive" id="params-group__adaptive" checked>
             <label for="params-group__adaptive">Адаптивная</label>
-          </li>
-          <li>
+          </div>
+          <div class="form-area">
             <input type="radio" name="params-group" value="fixed" id="params-group__fixed">
             <label for="params-group__fixed">Фиксированная</label>
-          </li>
-          <li>
+          </div>
+         <div class="form-area">
             <input type="radio" name="params-group" value="rubber" id="params-group__rubber">
             <label for="params-group__rubber">Резиновая</label>
-          </li>
-        </ul>
+         </div>
       </fieldset>
       <fieldset>
       <legend>Особенности:</legend>
-        <ul>
-          <li>
+        <div class="form-area">
             <input type="checkbox" name="slider" value="slider" id="params-features__slider" checked>
             <label for="params-features__slider">Слайдер</label>
-          </li>
-          <li>
+        </div>
+        <div class="form-area">
             <input type="checkbox" name="block" value="block" id="params-features__block">
             <label for="params-features__block">Блок преимуществ</label>
-          </li>
-          <li>
+        </div>
+        <div class="form-area">
             <input type="checkbox" name="news" value="news" id="params-features__news" checked>
             <label for="params-features__news">Новости</label>
-          </li>
-          <li>
+        </div>
+        <div class="form-area">
             <input type="checkbox" name="galery" value="galery" id="params-features__galery">
             <label for="params-features__galery">Галерея</label>
-          </li>
-          <li>
+        </div>
+        <div class="form-area">
             <input type="checkbox" name="basket" value="basket" id="params-features__basket">
             <label for="params-features__basket">Корзина</label>
-          </li>
-        </ul>
+        </div>
       </fieldset>
         <button type="submit">Показать</button>
     </form>
@@ -142,7 +141,7 @@
             </div>
         </li>
       </ul>
-      <ul>
+      <ul class="pagination">
           <li><a>1</a></li>
           <li><a href="#nowhere">2</a></li>
           <li><a href="#nowhere">3</a></li>
@@ -150,15 +149,15 @@
         </ul>
     </section>
     <section class="map-and-contacts">
-      <div class="map-and-contacts__contacts">
+      <div class="map-and-contacts-adress">
     	<h2>NЁRDS DESIGN STUDIO</h2>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <p>тел. +7 (812) 275-75-75</p>
       </div>
 	  <div class="pop-up-contacts">
-        <form class="pop-up-contacts__form" method="post" action="#">
+      <h2>Напишите нам</h2>  
+      <form class="pop-up-contacts-form" method="post" action="#">
           <fieldset>
-            <legend>Напишите нам</legend>
             <label for="name">Ваше имя:</label>
             <input id="name" type="text" name="name" placeholder="Имя Фамилия">
        	    <label for="mail">Ваш e-mail:</label>
