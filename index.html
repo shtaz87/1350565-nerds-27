@@ -15,7 +15,7 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
      </nav>
-     <ul class="user-basket">
+     <ul class="user-box">
           <li>
              <a class="basket" href="cart.html">
 			         Корзина
@@ -122,12 +122,18 @@
       <h2>Напишите нам</h2>  
       <form class="pop-up-contacts-form" method="post" action="#">
           <fieldset>
-            <label for="name">Ваше имя:</label>
-            <input id="name" type="text" name="name" placeholder="Имя Фамилия">
-       	    <label for="mail">Ваш e-mail:</label>
-            <input id="mail" type="text" name="mail" placeholder="email@example.com">
-            <label for="message">Текст письма:</label>
-            <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+            <div class="form-field">
+              <label for="name">Ваше имя:</label>
+              <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+            </div>
+       	    <div class="form-field">
+              <label for="mail">Ваш e-mail:</label>
+              <input id="mail" type="text" name="mail" placeholder="email@example.com">
+            </div>
+            <div class="form-field">
+              <label for="message">Текст письма:</label>
+              <textarea name="message" id="message" placeholder="В свободной форме"></textarea>
+            </div>
             <button type="submit">Отправить</button>
       	  </fieldset>
     	</form>
