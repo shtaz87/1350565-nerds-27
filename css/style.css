@@ -1,0 +1,238 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+.header {
+  background-color: #eeeeee;
+}
+.main-nav-list, 
+.user-box {
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  list-style: none;
+}
+.main-nav-list a:hover, 
+.main-nav-list a:focus, 
+.user-box a:hover,
+.user-box a:focus{
+  color: #fb565a;
+}
+.main-nav-list a:active, 
+.user-box a:active{
+  color:rgba(0, 0, 0, 0.3);
+}
+h1 {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+.slider {
+  background-color: #eeeeee ;
+}
+.slider h2 {
+  font-size: 55px;
+  font-weight: 500;
+  line-height: 55px;
+}
+.slider p {
+  color: #283136;
+}
+.slider a {
+  text-transform: uppercase;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #fb565a;
+}
+.slider a:hover {
+  background-color: #e74246;
+}
+.slider a:active {
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #d7373b;
+}
+.advantages-list {
+  list-style: none;
+}
+.advantages-list h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.advantages-list p {
+  font-size: 16px;
+  line-height: 24px;
+}
+.advantages-list a {
+  text-transform: uppercase;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.advantages-list li:first-child a {
+ background-color: #fb565a;  
+}
+.advantages-list li:nth-child(2) a {
+ background-color: #00ca74;  
+}
+.advantages-list li:last-child a {
+ background-color: #efc84a;  
+}
+.advantages-list li:first-child a:hover,
+.advantages-list li:first-child a:focus{
+ background-color: #e74246;  
+}
+.advantages-list li:nth-child(2) a:hover,
+.advantages-list li:nth-child(2) a:focus{
+ background-color: #00bc6c;  
+}
+.advantages-list li:last-child a:hover,
+.advantages-list li:last-child a:focus{
+ background-color: #eab534;  
+}
+.advantages-list li:first-child a:active {
+ color: rgba(0, 1, 1, 0.1);
+ background-color: #d7373b;  
+}
+.advantages-list li:nth-child(2) a:active {
+ color: rgba(0, 1, 1, 0.1);
+ background-color: #00aa62;  
+}
+.advantages-list li:last-child a:active {
+ color: rgba(0, 1, 1, 0.1);
+ background-color: #e5a722;  
+}
+.about-us h2 {
+  font-size: 45px;
+  line-height: 45px;
+}
+.about-us p {
+  line-height: 24px;
+  color: #283136;
+}
+.about-us .orders {
+  color: #000000;
+  font-weight: bold;
+}
+.achievements p {
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 24px;
+}
+.achievemtns-table td {
+  font-weight: bold;
+  font-size: 45px;
+}
+.achievemtns-table th {
+  font-weight: normal;
+  color: #283136;
+  line-height: 18px;
+}
+.filter legend {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform:  uppercase;
+}
+.filter label {
+  font-size: 16px;
+  line-height: 20px;
+  color: #283136;
+}
+.sorting p {
+  font-size: 18px;
+  font-weight: bold;
+}
+.sorting ul {
+  list-style: none;
+}
+.sorting-item {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+}
+.sorting-item .sorting-item-active {
+  color: #000000;
+}
+.article {
+  list-style: none;
+}
+.article-item-hover h2 {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+}
+.article-item-hover p {
+  line-height: 18px;
+  color: #666666;
+}
+.article-item-hover p {
+  line-height: 18px;
+  color: #666666;
+}
+.article-item-hover a {
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #fb565a;
+}
+.article-item-hover a:hover,
+.article-item-hover a:focus{
+ background-color: #e74246;  
+}
+.article-item-hover a:active {
+ background-color: #d7373b;  
+}
+.pagination {
+  list-style: none;
+}
+.map-and-contacts-adress h2 {
+  font-size: 18px;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+.map-and-contacts-adress p {
+  color: #666666;
+}
+.main-footer .social {
+  list-style: none;
+}
+.main-footer b {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 36px;
+}
+.main-footer b {
+  line-height: 22px;
+  color: #444444;
+}
+.pop-up-contacts {
+  visibility: hidden;
+}
+.pop-up-contacts h2 {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+.pop-up-contacts label {
+  font-weight: bold;
+  line-height: 18px;
+}
+.pop-up-contacts button {
+  font-weight: medium;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.visually-hidden {
+  visibility: hidden;
+  height: 0;
+}
