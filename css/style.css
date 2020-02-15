@@ -1021,7 +1021,7 @@ color: rgba(0, 0, 0, 0.3);
 }
 
 .feedback-row .feedback-field {
-  widht: 50%;
+  width: 50%;
   display: inline-block;
 }
 
@@ -1074,7 +1074,7 @@ color: rgba(0, 0, 0, 0.3);
 
 .feedback-close:hover,
 .feedback-close:focus{
- opcaity: 1; 
+ opacity: 1; 
 }
 
 .feedback-close:active {
