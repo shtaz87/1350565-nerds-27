@@ -39,7 +39,6 @@
     modal.classList.add("feedback-open");
   });
 
-
   close.addEventListener("click", function (evt) {
     evt.preventDefault();
     modal.classList.remove("feedback-open");
@@ -50,7 +49,7 @@
 
     if (!name.value || !email.value || !textarea.value ) {
       evt.preventDefault();
-       modal.classList.add("feedback-error");
+      modal.classList.add("feedback-error");
       if (!name.value) {
         name.parentElement.classList.add("feedback-field-error");
         name.addEventListener("change", onChange);
