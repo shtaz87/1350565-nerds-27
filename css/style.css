@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/roboto.eot") format("embedded-opentype");
+  src: url("../fonts/roboto.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/roboto-medium.eot") format("embedded-opentype");
+  src: url("../fonts/roboto-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("../fonts/roboto-bold.eot") format("embedded-opentype");
+  src: url("../fonts/roboto-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
 body {
   min-width: 1440px;
   padding: 0;
@@ -573,22 +597,24 @@ input[type="radio"].visually-hidden {
   line-height: 24px;
   list-style: none;
   color: #283136;
-  padding-left: 36px;
 }
 
 .about-us-text li {
-  padding-bottom: 24px;
+  margin-bottom: 24px;
+  position: relative;
+  padding-left: 36px;
 }
 
 .about-us-text li::before {
   content: "";
-  display: inline;
+  display: block;
   width: 25px;
-  height: 25px;
+  height: 2px;
+  background-color: #fb565a;
   position: absolute;
-  border-bottom: 2px solid #fb565a;
-  margin-left: -35px;
-  margin-top: -14px;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 .achievements {
@@ -726,7 +752,6 @@ input[type="radio"].visually-hidden {
   padding-right: 20px;
   text-align: center;
 }
-
 
 .inner-text-block {
   display: -webkit-box;
@@ -959,7 +984,8 @@ input[type="radio"].visually-hidden {
   opacity: 0.4;
 }
 
-.form-area-checkbox:hover + label::before {
+.form-area-checkbox:hover + label::before,
+.form-area-checkbox:focus + label::before{
   opacity: 1;
 }
 
@@ -1000,7 +1026,8 @@ input[type="radio"].visually-hidden {
   opacity: 0.4;
 }
 
-.form-area-radio:hover + label::before {
+.form-area-radio:hover + label::before,
+.form-area-radio:focus + label::before {
   opacity: 1;
 }
 
@@ -1134,7 +1161,7 @@ input[type="radio"].visually-hidden {
 }
 
 .article-item-browser {
-  background: url(../img/browser.svg) no-repeat center top;
+  background: url("../img/browser.svg") no-repeat center top;
   width: 360px;
   height: 40px;
   margin: 0;
@@ -1165,7 +1192,6 @@ input[type="radio"].visually-hidden {
   background-color: #eeeeee;
   text-align: center;
   width: 360px;
-  min-height: 231px;
   padding-bottom: 20px;
 }
 
@@ -1186,7 +1212,7 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  margin-top: 28px;
+  margin-top: 27px;
   margin-bottom: 15px;
 }
 
@@ -1204,19 +1230,21 @@ input[type="radio"].visually-hidden {
   color: #666666;
   margin: 0 auto;
   padding: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   width: 240px;
 }
 
 .article-item-price {
-  line-height: 18px;
+  line-height: 19px;
   font-weight: 500;
   color: #ffffff;
   background-color: #fb565a;
   padding-top: 16px;
-  padding-right: 62px;
+  margin-bottom: 24px;
+  padding-right: 59px;
   padding-bottom: 15px;
-  padding-left: 64px;
+  padding-left: 62px;
+  text-transform: uppercase;
 }
 
 .article-item-price:hover,
@@ -1558,26 +1586,25 @@ input[type="radio"].visually-hidden {
 .feedback-field-error input,
 .feedback-field-error textarea {
   border: 2px solid #e74246;
-  /*color: #e74246;*/
 }
 
-
-.feedback-field-error input::-webkit-input-placeholder, .feedback-field-error textarea::-webkit-input-placeholder {
+.feedback-field-error input::-webkit-input-placeholder,
+.feedback-field-error textarea::-webkit-input-placeholder {
   color: #e74246;
 }
 
-
-.feedback-field-error input::-moz-placeholder, .feedback-field-error textarea::-moz-placeholder {
+.feedback-field-error input::-moz-placeholder,
+.feedback-field-error textarea::-moz-placeholder {
   color: #e74246;
 }
 
-
-.feedback-field-error input:-ms-input-placeholder, .feedback-field-error textarea:-ms-input-placeholder {
+.feedback-field-error input:-ms-input-placeholder,
+.feedback-field-error textarea:-ms-input-placeholder {
   color: #e74246;
 }
 
-
-.feedback-field-error input::-ms-input-placeholder, .feedback-field-error textarea::-ms-input-placeholder {
+.feedback-field-error input::-ms-input-placeholder,
+.feedback-field-error textarea::-ms-input-placeholder {
   color: #e74246;
 }
 
